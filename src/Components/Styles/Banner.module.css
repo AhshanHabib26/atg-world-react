@@ -1,0 +1,14 @@
+.myImg{
+    opacity: 65px;
+}
+
+.MyCaption {
+  position: absolute;
+  bottom: 1.25rem;
+  left: 15%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  text-align: center;
+}
+
