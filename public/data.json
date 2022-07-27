@@ -1,0 +1,48 @@
+[
+  {
+    "id": "1",
+    "Title": "What if famous brands had regular fonts? Meet RegulaBrands!",
+    "Description": "I’ve worked in UX for the better part of a decade. From now on, I plan to rei…",
+    "Image": "https://i.ibb.co/ZcyWTgV/Post-2.png",
+    "User": {
+      "UserProfile": "https://i.ibb.co/607jsp2/Profile-3.png",
+      "UserName": "Sarthak Kamra"
+    },
+    "Category": "Article",
+    "Views": "1.4k"
+  },
+  {
+    "id": "2",
+    "Title": "Tax Benefits for Investment under National Pension Scheme launched by Government",
+    "Description": "I’ve worked in UX for the better part of a decade. From now on, I plan to rei…",
+    "Image": "https://i.ibb.co/dghXKJf/Post-1.png",
+    "User": {
+      "UserProfile": "https://i.ibb.co/4JkWWTg/Profile-2.png",
+      "UserName": "Sarah West"
+    },
+    "Category": "Education",
+    "Views": "1.4k"
+  },
+  {
+    "id": "3",
+    "Title": "Finance & Investment Elite Social Mixer @Lujiazui",
+    "Image": "https://i.ibb.co/BtwZm9z/Post-3.png",
+    "User": {
+      "UserProfile": "https://i.ibb.co/XDmQCbK/Profile-1.png",
+      "UserName": "Ronal Jones"
+    },
+    "Category": "Meetup",
+    "Views": "1.4k"
+  },
+  {
+    "id": "4",
+    "Title": "Software Developer",
+    "Image": "",
+    "User": {
+      "UserProfile": "https://i.ibb.co/KDpj6gX/Profile-4.png",
+      "UserName": "Joseph Gray"
+    },
+    "Category": "Job",
+    "Views": "1.4k"
+  }
+]
