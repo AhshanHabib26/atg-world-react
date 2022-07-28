@@ -3,6 +3,8 @@ import Modal from "react-bootstrap/Modal";
 import { ImCross } from "react-icons/im";
 import Styles from "../Styles/Login.module.css";
 import BannerImg from "../Images/Signin_Banner.png";
+import {BsFacebook} from 'react-icons/bs'
+import {FcGoogle} from 'react-icons/fc'
 
 const Login = ({ show, handleClose }) => {
   return (
@@ -35,10 +37,10 @@ const Login = ({ show, handleClose }) => {
 
               <div className={Styles.socialLogin}>
                 <div className="facebook">
-                  <button type="submit">Sign Up With Facebook</button>
+                  <button type="submit"> <BsFacebook color="#2F6CE5" /> Sign Up With Facebook</button>
                 </div>
                 <div className="google">
-                  <button type="submit">Sign Up With Google</button>
+                  <button type="submit"> <FcGoogle/> Sign Up With Google</button>
                 </div>
                 <p className={Styles.ForgetText}>Forgot Password?</p>
               </div>

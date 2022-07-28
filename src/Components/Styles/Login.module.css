@@ -8,6 +8,9 @@
     padding: 2px 5px;
     text-align: center;
 }
+.mainWrapper{
+    border-radius: 10px;
+}
 
 .modalTitle{
     padding: 17px 58px;
@@ -16,6 +19,7 @@
     font-size: 14px;
     text-align: center;
     font-weight: 500;
+    border-radius: 10px;
 
 }
 .loginContainer{
@@ -43,6 +47,7 @@
     color: #8A8A8A;
     font-size: 15px;
     font-weight: 500;
+    outline: none;
 }
 
 .loginContainer input[type="submit"]{
@@ -79,4 +84,8 @@
 }
 .bannerLogin p span{
     color: #2F6CE5;
+}
+@media only screen and (max-width: 768px) and (min-width: 350px)  {
+    .bannerLogin{ display: none;}
+    .loginContainer{ grid-template-columns: repeat(1, 1fr);}
 }

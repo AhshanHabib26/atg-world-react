@@ -56,3 +56,8 @@
     font-weight: 500;
     margin-left: 10px;
 }
+
+@media only screen and (max-width: 768px) and (min-width: 350px)  {
+    .outer_wrapper{ display: none;}
+    .main_wrapper{ justify-content: center;}
+}

@@ -3,6 +3,8 @@ import Modal from "react-bootstrap/Modal";
 import { ImCross } from "react-icons/im";
 import Styles from "../Styles/Signup.module.css";
 import BannerImg from "../Images/Signin_Banner.png";
+import {BsFacebook} from 'react-icons/bs'
+import {FcGoogle} from 'react-icons/fc'
 
 const Signup = ({ showSignup, handleCloseSignup }) => {
   return (
@@ -22,8 +24,8 @@ const Signup = ({ showSignup, handleCloseSignup }) => {
             Let's learn, share & inspire each other with our passion for
             computer engineering. Sign up now 🤘🏼
           </div>
-          <div className={Styles.loginContainer}>
-            <div className={Styles.innerLogin}>
+          <div className={Styles.SignupContainer}>
+            <div className={Styles.innerSignup}>
               <h1>Create Account</h1>
               <form>
                 <div className={Styles.inputContainer}>
@@ -38,17 +40,17 @@ const Signup = ({ showSignup, handleCloseSignup }) => {
                 </div>
               </form>
 
-              <div className={Styles.socialLogin}>
+              <div className={Styles.socialSignup}>
                 <div className="facebook">
-                  <button type="submit">Sign Up With Facebook</button>
+                  <button type="submit"> <BsFacebook color="#2F6CE5" /> Sign Up With Facebook</button>
                 </div>
                 <div className="google">
-                  <button type="submit">Sign Up With Google</button>
+                  <button type="submit"> <FcGoogle/> Sign Up With Google</button>
                 </div>
               </div>
             </div>
 
-            <div className={Styles.bannerLogin}>
+            <div className={Styles.bannerSignup}>
               <p>
                 Already have an account? <span>Sign In</span>{" "}
               </p>
