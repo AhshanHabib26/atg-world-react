@@ -9,12 +9,16 @@ import Styles from "../../Styles/Header.module.css";
 import { AiOutlineSearch } from "react-icons/ai";
 import { NavDropdown } from "react-bootstrap";
 import Login from "../../Register/Login";
+import Signup from "../../Register/Signup";
 
 const Header = () => {
 
   const [showLogin, setShowLogin] = useState(false);
+  const [showSignup, setShowSignup] = useState(false);
   const handleClose = () => setShowLogin(false);
   const handleShow = () => setShowLogin(true);
+  const handleCloseSignup = () => setShowSignup(false);
+  const handleShowSignup = () => setShowSignup(true);
 
 
   return (
@@ -49,13 +53,14 @@ const Header = () => {
             >
               <NavDropdown title='Create Account, It’s free!' id="basic-nav-dropdown">
                 <NavDropdown.Item  onClick={handleShow} >Login</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.1">Signup</NavDropdown.Item>
+                <NavDropdown.Item onClick={handleShowSignup} >Signup</NavDropdown.Item>
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
       <Login show={showLogin} handleClose={handleClose} />
+      <Signup showSignup={showSignup} handleCloseSignup={handleCloseSignup} />
     </div>
   );
 };

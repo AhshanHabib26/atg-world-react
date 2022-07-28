@@ -1,20 +1,20 @@
 import React from "react";
 import Modal from "react-bootstrap/Modal";
 import { ImCross } from "react-icons/im";
-import Styles from "../Styles/Login.module.css";
+import Styles from "../Styles/Signup.module.css";
 import BannerImg from "../Images/Signin_Banner.png";
 
-const Login = ({ show, handleClose }) => {
+const Signup = ({ showSignup, handleCloseSignup }) => {
   return (
     <div>
       <Modal
         size="lg"
         aria-labelledby="contained-modal-title-vcenter"
         centered
-        show={show}
-        onHide={handleClose}
+        show={showSignup}
+        onHide={handleCloseSignup}
       >
-        <span className={Styles.handleClBtn} onClick={handleClose}>
+        <span className={Styles.handleClBtn} onClick={handleCloseSignup}>
           <ImCross />
         </span>
         <div className={Styles.mainWrapper}>
@@ -24,12 +24,17 @@ const Login = ({ show, handleClose }) => {
           </div>
           <div className={Styles.loginContainer}>
             <div className={Styles.innerLogin}>
-              <h1>Sign In</h1>
+              <h1>Create Account</h1>
               <form>
                 <div className={Styles.inputContainer}>
+                  <div className={Styles.inutBox}>
+                    <input type="text" placeholder="First Name" />
+                    <input type="text" placeholder="Last Name" />
+                  </div>
                   <input type="email" placeholder="Email" />
                   <input type="password" placeholder="Password" />
-                  <input type="submit" value="Sign In" />
+                  <input type="password" placeholder="Confirm Password" />
+                  <input type="submit" value="Create Account" />
                 </div>
               </form>
 
@@ -40,17 +45,20 @@ const Login = ({ show, handleClose }) => {
                 <div className="google">
                   <button type="submit">Sign Up With Google</button>
                 </div>
-                <p className={Styles.ForgetText}>Forgot Password?</p>
               </div>
             </div>
 
             <div className={Styles.bannerLogin}>
               <p>
-                Don't have an account Yet? <span>Create new for me!</span>{" "}
+                Already have an account? <span>Sign In</span>{" "}
               </p>
               <div className="BannerContainer">
                 <img src={BannerImg} alt="" />
               </div>
+              <p className={Styles.termsText}>
+                By signing up, you agree to our Terms & conditions, Privacy
+                policy
+              </p>
             </div>
           </div>
         </div>
@@ -59,4 +67,4 @@ const Login = ({ show, handleClose }) => {
   );
 };
 
-export default Login;
+export default Signup;

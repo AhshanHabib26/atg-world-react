@@ -30,6 +30,9 @@
     font-weight: 700;
     margin-bottom: 24px;
 }
+.inutBox{
+    display: flex;
+}
 .inputContainer{
     display: block;
     width: 100%;
@@ -65,18 +68,17 @@
     font-size: 14px;
     font-weight: 400;
 }
-.ForgetText{
-    font-size: 12px;
-    font-weight: 500;
-    color: #000;
-    text-align: center;
-
-}
-
 .bannerLogin P{
     text-align: right;
     margin-bottom: 40px;
 }
 .bannerLogin p span{
     color: #2F6CE5;
+}
+.termsText{
+    font-size: 11px;
+    text-align: center;
+    line-height: 16px;
+    font-weight: 400;
+    margin-top: 50px;
 }
