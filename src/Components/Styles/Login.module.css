@@ -1,0 +1,13 @@
+.handleClBtn{
+    position: absolute;
+    top: -35px;
+    right: 0px;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 100%;
+    padding: 2px 5px;
+    text-align: center;
+}
+.mainWrapper{
+    padding: 36px;
+}

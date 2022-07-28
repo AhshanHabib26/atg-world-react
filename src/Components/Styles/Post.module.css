@@ -1,0 +1,61 @@
+.PostCategory {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 10px;
+  line-height: 23px;
+}
+.PostTitle {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 30px;
+}
+.PostDescription {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 25px;
+  color: #5c5c5c;
+}
+
+.btnContainer {
+  width: 100%;
+  height: 36px;
+  color: #e56135;
+  border: 0.7px solid #a9aeb8;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.footer_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+.user_wrapper,
+.share_wrapper {
+  display: flex;
+  align-items: center;
+}
+.user_wrapper .name {
+  margin-left: 10px;
+}
+.name h5 {
+  font-size: 18px;
+  color: #000;
+}
+.view_area {
+  display: flex;
+  margin-right: 40px;
+}
+.view_area p {
+  margin-left: 14px;
+  color: #525252;
+}
+.share_area span {
+  background-color: #edeef0;
+  width: 42px;
+  height: 36px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}

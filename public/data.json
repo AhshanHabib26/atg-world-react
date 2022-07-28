@@ -8,7 +8,7 @@
       "UserProfile": "https://i.ibb.co/607jsp2/Profile-3.png",
       "UserName": "Sarthak Kamra"
     },
-    "Category": "Article",
+    "Category": "✍️ Article",
     "Views": "1.4k"
   },
   {
@@ -20,7 +20,7 @@
       "UserProfile": "https://i.ibb.co/4JkWWTg/Profile-2.png",
       "UserName": "Sarah West"
     },
-    "Category": "Education",
+    "Category": "🔬️ Education",
     "Views": "1.4k"
   },
   {
@@ -31,8 +31,9 @@
       "UserProfile": "https://i.ibb.co/XDmQCbK/Profile-1.png",
       "UserName": "Ronal Jones"
     },
-    "Category": "Meetup",
-    "Views": "1.4k"
+    "Category": "🗓️ Meetup",
+    "Views": "1.4k",
+    "BtnText": "Visit Website"
   },
   {
     "id": "4",
@@ -42,7 +43,8 @@
       "UserProfile": "https://i.ibb.co/KDpj6gX/Profile-4.png",
       "UserName": "Joseph Gray"
     },
-    "Category": "Job",
-    "Views": "1.4k"
+    "Category": "💼️ Job",
+    "Views": "1.4k",
+    "BtnText": "Apply on Timesjobs"
   }
 ]

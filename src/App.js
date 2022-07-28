@@ -4,12 +4,15 @@ import Home from "./Components/Pages/Home/Home";
 import Header from "./Components/Pages/Home/Header";
 
 function App() {
+
+
   return (
     <div>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+        </Routes>
     </div>
   );
 }

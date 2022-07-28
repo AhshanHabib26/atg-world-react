@@ -1,0 +1,23 @@
+.postsContainer{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+.innerPostsWrapper{
+    flex: 1;
+    flex-grow: 2;
+}
+.innerAside{
+    flex: 1;
+    
+}
+.innerDisplay{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.text{
+    display: flex;
+    align-items: center;
+}
+

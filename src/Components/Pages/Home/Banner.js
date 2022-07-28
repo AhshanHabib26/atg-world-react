@@ -6,7 +6,7 @@ import Styles from '../../Styles/Banner.module.css'
 const Banner = () => {
   return (
     <div>
-      <Carousel controls={false} >
+      <Carousel controls={false} indicators={false} >
         <Carousel.Item>
           <img
             className="d-block w-100 myImg"

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
@@ -7,8 +7,16 @@ import { Link } from "react-router-dom";
 import Logo from "../../Images/logo.png";
 import Styles from "../../Styles/Header.module.css";
 import { AiOutlineSearch } from "react-icons/ai";
+import { NavDropdown } from "react-bootstrap";
+import Login from "../../Register/Login";
 
 const Header = () => {
+
+  const [showLogin, setShowLogin] = useState(false);
+  const handleClose = () => setShowLogin(false);
+  const handleShow = () => setShowLogin(true);
+
+
   return (
     <div>
       <Navbar bg="white" className="mx-2" expand="lg">
@@ -25,7 +33,7 @@ const Header = () => {
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Form className="d-flex mainInput justify-content-center align-items-center  mx-auto">
-                <AiOutlineSearch className={Styles.searchBtn}/>
+              <AiOutlineSearch className={Styles.searchBtn} />
               <input
                 type="search"
                 placeholder="Search for your favorite groups in ATG"
@@ -39,13 +47,15 @@ const Header = () => {
               style={{ maxHeight: "100px" }}
               navbarScroll
             >
-              <span>
-                Create account. <Link to="/">It’s free!</Link>{" "}
-              </span>
+              <NavDropdown title='Create Account, It’s free!' id="basic-nav-dropdown">
+                <NavDropdown.Item  onClick={handleShow} >Login</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.1">Signup</NavDropdown.Item>
+              </NavDropdown>
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
+      <Login show={showLogin} handleClose={handleClose} />
     </div>
   );
 };
